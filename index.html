@@ -13,13 +13,13 @@
 <body>
       <div class="page">
         <header class="header">
-          <img alt="Yandex" src="./images/logo_place_header.png" class="logo logo_place logo_place_header">
+          <img alt="Yandex" src="./images/logo_place_header.png" class="logo logo_place_header">
           <h1 class="header__title">Learning how to learn</h1>
-          <div class="header__subtitle">
-            <p>The most effective, cutting-edge learning techniques that you can apply to your daily life.</p>
+          <p class="header__subtitle">
+            The most effective, cutting-edge learning techniques that you can apply to your daily life.
             <a class = "header__link" href = "#">Learn more →</a>
-          </div>
-          <img alt="" class="header__main-illustration" src = "./images/header-image.png">
+          </p>
+          <div class="header__main-illustration"></div>
           <div class="header__square-pic"></div>
         </header>
 
@@ -92,12 +92,12 @@ make it more efficient and engaging. This is exactly what we do at Practicum.</p
             <section class="feynman">
               <h2 class="feynman__title">The Feynman Technique</h2>
               <p class="feynman__subtitle">Learn without forgetting.</p>
-              <img alt="" class="feynman__img" src="./images/feynman.png">
+              <div class="feynman__img"></div>
               <a class = "feynman__link" href = "#">More →</a>
             </section>
 
             <section class="kaufman">
-              <img alt="" class="kaufman__triangle" src="./images/kaufman-triangle.svg">
+              <div class="kaufman__triangle"></div>
               <h3 class="section-title section-title_theme_dark">Ten principles of rapid skill acquisition</h3>
               <p class="section-subtitle section-subtitle_theme_dark">by Josh Kaufman</p>
               <ul class="table table_theme_dark">
@@ -156,29 +156,37 @@ make it more efficient and engaging. This is exactly what we do at Practicum.</p
 
         <footer class="footer">
           <div class="footer__columns">
-            <div class="footer__column footer__column_content footer__column_content_copyright">
-              <img alt="Yandex" src="./images/logo_place_footer.png" class="logo logo_place logo_place_footer">
+            <div class="footer__column footer__column_content_copyright">
+              <img alt="Yandex" src="./images/logo_place_footer.png" class="logo logo_place_footer">
               <p class="footer__author">© 2019. Nikita Smolskiy</p>
             </div>
 
-            <nav class="footer__column footer__column_content footer__column_content_info">
+            <div class="footer__column footer__column_content_info">
               <h5 class="footer__column-heading">About Practicum by Yandex</h5>
-                <a class="footer__column-links" href="#">Home page</a>
-                <a class="footer__column-links" href="#">Concept</a>
-                <a class="footer__column-links" href="#">Mentors</a>
-            </nav>
+              <nav>
+                <ul class="footer__column-links">
+                  <li><a class="footer__column-link" href="#">Home page</a></li>
+                  <li><a class="footer__column-link" href="#">Concept</a></li>
+                  <li><a class="footer__column-link" href="#">Mentors</a></li>
+                </ul>
+              </nav>
+            </div>
 
-            <ul class="footer__column footer__column_content footer__column_content_social">
+            <div class="footer__column footer__column_content_social">
               <h5 class="footer__column-heading">Social media</h5>
-                <li><a class="footer__column-links" href="https://facebook.com">
-                  <img class="footer__social-icon" src="./images/facebook_color_white.svg">
-                  Facebook
-                </a></li>
-                <li><a class="footer__column-links" href="https://instagram.com">
-                  <img class="footer__social-icon" src="./images/instagram_color_white.svg">
-                  Instagram
-                </a></li>
-            </ul>
+              <nav>
+                <ul class="footer__column-links">
+                  <li><a class="footer__column-link" href="https://facebook.com">
+                    <img alt="Facebook" class="footer__social-icon" src="./images/facebook_color_white.svg">
+                    Facebook
+                  </a></li>
+                  <li><a class="footer__column-link" href="https://instagram.com">
+                    <img alt="Instagram" class="footer__social-icon" src="./images/instagram_color_white.svg">
+                    Instagram
+                  </a></li>
+                </ul>
+                </nav>
+            </div>
           </div>
         </footer>
       </div>
